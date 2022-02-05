@@ -1,4 +1,4 @@
-# djangoCMS 3.9.0 Boilerplate
+# djangoCMS Boilerplate
 
 ## Setup:
 
