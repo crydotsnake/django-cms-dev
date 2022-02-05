@@ -40,7 +40,7 @@ python manage.py runserver
 
 ## Check your installation
 
-Your can check our Installation for any erros with:
+Your can check your Installation for any erros with:
 
 ```bash
 python manage.py cms check
