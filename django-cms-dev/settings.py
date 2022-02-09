@@ -30,7 +30,6 @@ ALLOWED_HOSTS = []
 
 LANGUAGES = [
     ('en', 'English'),
-    ('de', 'German'),
 ]
 
 
