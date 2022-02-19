@@ -24,67 +24,89 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'v#5n#6&*$8*^z46w!=(ovh_r2nll801uh8netd7j(0b9-_@c)x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+]
 
 LANGUAGES = [
-    ('en', 'English'),
+    ('en-us', 'English'),
+    ('de', 'German'),
 ]
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'djangocms_admin_style',
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'django.contrib.sites',
-    'cms',
-    'menus',
-    'treebeard',
-    'sekizai',
-    'filer',
-    'easy_thumbnails',
-    'mptt',
-    'djangocms_text_ckeditor',
+'djangocms_admin_style',
+'django.contrib.admin',
+'django.contrib.auth',
+'django.contrib.contenttypes',
+'django.contrib.sessions',
+'django.contrib.messages',
+'django.contrib.staticfiles',
+'django.contrib.sites',
+'cms',
+'menus',
+'treebeard',
+'sekizai',
+'filer',
+'easy_thumbnails',
+'mptt',
+'djangocms_text_ckeditor',
+
+# djangocms-bootstrap4
+'djangocms_link',
+'djangocms_picture',
+'djangocms_bootstrap4',
+'djangocms_bootstrap4.contrib.bootstrap4_alerts',
+'djangocms_bootstrap4.contrib.bootstrap4_badge',
+'djangocms_bootstrap4.contrib.bootstrap4_card',
+'djangocms_bootstrap4.contrib.bootstrap4_carousel',
+'djangocms_bootstrap4.contrib.bootstrap4_collapse',
+'djangocms_bootstrap4.contrib.bootstrap4_content',
+'djangocms_bootstrap4.contrib.bootstrap4_grid',
+'djangocms_bootstrap4.contrib.bootstrap4_jumbotron',
+'djangocms_bootstrap4.contrib.bootstrap4_link',
+'djangocms_bootstrap4.contrib.bootstrap4_listgroup',
+'djangocms_bootstrap4.contrib.bootstrap4_media',
+'djangocms_bootstrap4.contrib.bootstrap4_picture',
+'djangocms_bootstrap4.contrib.bootstrap4_tabs',
+'djangocms_bootstrap4.contrib.bootstrap4_utilities',
+
+# Django Debug Toolbar
+'debug_toolbar',
 ]
 
 THUMBNAIL_HIGH_RESOLUTION = True
 
 THUMBNAIL_PROCESSORS = (
-    'easy_thumbnails.processors.colorspace',
-    'easy_thumbnails.processors.autocrop',
-    'filer.thumbnail_processors.scale_and_crop_with_subject_location',
-    'easy_thumbnails.processors.filters'
+'easy_thumbnails.processors.colorspace',
+'easy_thumbnails.processors.autocrop',
+'filer.thumbnail_processors.scale_and_crop_with_subject_location',
+'easy_thumbnails.processors.filters'
 )
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'cms.middleware.user.CurrentUserMiddleware',
-    'cms.middleware.page.CurrentPageMiddleware',
-    'cms.middleware.toolbar.ToolbarMiddleware',
-    'cms.middleware.language.LanguageCookieMiddleware',
-    'django.middleware.locale.LocaleMiddleware',
-    'cms.middleware.utils.ApphookReloadMiddleware',
+'django.middleware.security.SecurityMiddleware',
+'django.contrib.sessions.middleware.SessionMiddleware',
+'django.middleware.common.CommonMiddleware',
+'django.middleware.csrf.CsrfViewMiddleware',
+'django.contrib.auth.middleware.AuthenticationMiddleware',
+'django.contrib.messages.middleware.MessageMiddleware',
+'django.middleware.clickjacking.XFrameOptionsMiddleware',
+'cms.middleware.user.CurrentUserMiddleware',
+'cms.middleware.page.CurrentPageMiddleware',
+'cms.middleware.toolbar.ToolbarMiddleware',
+'cms.middleware.language.LanguageCookieMiddleware',
+'django.middleware.locale.LocaleMiddleware',
+'cms.middleware.utils.ApphookReloadMiddleware',
+'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'django-cms-dev.urls'
 
-LANGUAGES = [
-    ('en-us', 'English'),
-    ('de', 'German'),
-]
 
 TEMPLATES = [
     {
@@ -173,3 +195,7 @@ STATIC_URL = '/static/'
 LANGUAGE_COOKIE_HTTPONLY = False
 LANGUAGE_COOKIE_SAMESITE = None
 LANGUAGE_COOKIE_SECURE = False
+
+INTERNAL_IPS = [
+    '127.0.0.1',
+]
