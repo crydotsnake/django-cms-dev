@@ -2,7 +2,7 @@
 
 ## Setup:
 
-Create a virtual python envoirement:
+Create a virtual python environment:
 
 ```bash
 mkvirtualenv django-cms-dev
