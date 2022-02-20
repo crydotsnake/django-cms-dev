@@ -4,26 +4,41 @@
 #
 #    pip-compile requirements.txt
 #
-asgiref==3.4.1
-    # via -r requirements.txt
-django==2.2
+asgiref==3.2.10
+    # via
+    #   -r requirements.txt
+    #   django
+django==3.1.14
     # via
     #   -r requirements.txt
     #   django-classy-tags
+    #   django-entangled
     #   django-filer
     #   django-formtools
     #   django-polymorphic
     #   django-sekizai
+    #   django-select2
     #   django-treebeard
+    #   djangocms-frontend
     #   easy-thumbnails
+django-appconf==1.0.5
+    # via django-select2
 django-classy-tags==3.0.1
-    # via django-sekizai
+    # via
+    #   -r requirements.txt
+    #   django-sekizai
 django-cms @ https://github.com/django-cms/django-cms/archive/refs/tags/3.9.0.zip
     # via
     #   -r requirements.txt
-    #   djangocms-text-ckeditor
+    #   djangocms-attributes-field
+    #   djangocms-frontend
+    #   djangocms-icon
+django-entangled==0.4
+    # via djangocms-frontend
 django-filer==2.0.2
-    # via -r requirements.txt
+    # via
+    #   -r requirements.txt
+    #   djangocms-frontend
 django-formtools==2.3
     # via -r requirements.txt
 django-js-asset==1.2.2
@@ -40,24 +55,33 @@ django-polymorphic==3.0.0
     #   django-filer
 django-sekizai==2.0.0
     # via -r requirements.txt
+django-select2==7.10.0
+    # via djangocms-frontend
 django-treebeard==4.5.1
     # via -r requirements.txt
 djangocms-admin-style==2.0.2
     # via -r requirements.txt
-djangocms-text-ckeditor @ https://github.com/django-cms/djangocms-text-ckeditor/archive/refs/tags/4.0.0.zip
+djangocms-attributes-field==2.0.0
+    # via
+    #   djangocms-frontend
+    #   djangocms-icon
+djangocms-frontend @ https://github.com/fsbraun/djangocms-frontend/archive/master.zip
     # via -r requirements.txt
+djangocms-icon==2.0.0
+    # via djangocms-frontend
+djangocms-text-ckeditor @ https://github.com/django-cms/djangocms-text-ckeditor/archive/refs/tags/4.0.0.zip
+    # via
+    #   -r requirements.txt
+    #   djangocms-frontend
 easy-thumbnails==2.7.2
     # via
     #   -r requirements.txt
     #   django-filer
 html5lib==1.1
-    # via
-    #   -r requirements.txt
-    #   djangocms-text-ckeditor
+    # via -r requirements.txt
 pillow==8.4.0
     # via
     #   -r requirements.txt
-    #   djangocms-text-ckeditor
     #   easy-thumbnails
 pytz==2021.3
     # via
