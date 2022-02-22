@@ -8,9 +8,12 @@ asgiref==3.2.10
     # via
     #   -r requirements.txt
     #   django
+cssselect2==0.4.1
+    # via svglib
 django==3.1.14
     # via
     #   -r requirements.txt
+    #   django-appconf
     #   django-classy-tags
     #   django-entangled
     #   django-filer
@@ -22,7 +25,9 @@ django==3.1.14
     #   djangocms-frontend
     #   easy-thumbnails
 django-appconf==1.0.5
-    # via django-select2
+    # via
+    #   -r requirements.txt
+    #   django-select2
 django-classy-tags==3.0.1
     # via
     #   -r requirements.txt
@@ -34,8 +39,10 @@ django-cms @ https://github.com/django-cms/django-cms/archive/refs/tags/3.9.0.zi
     #   djangocms-frontend
     #   djangocms-icon
 django-entangled==0.4
-    # via djangocms-frontend
-django-filer==2.0.2
+    # via
+    #   -r requirements.txt
+    #   djangocms-frontend
+django-filer==2.1.2
     # via
     #   -r requirements.txt
     #   djangocms-frontend
@@ -56,37 +63,49 @@ django-polymorphic==3.0.0
 django-sekizai==2.0.0
     # via -r requirements.txt
 django-select2==7.10.0
-    # via djangocms-frontend
+    # via
+    #   -r requirements.txt
+    #   djangocms-frontend
 django-treebeard==4.5.1
     # via -r requirements.txt
 djangocms-admin-style==2.0.2
     # via -r requirements.txt
 djangocms-attributes-field==2.0.0
     # via
+    #   -r requirements.txt
     #   djangocms-frontend
     #   djangocms-icon
 djangocms-frontend @ https://github.com/fsbraun/djangocms-frontend/archive/master.zip
     # via -r requirements.txt
 djangocms-icon==2.0.0
-    # via djangocms-frontend
+    # via
+    #   -r requirements.txt
+    #   djangocms-frontend
 djangocms-text-ckeditor @ https://github.com/django-cms/djangocms-text-ckeditor/archive/refs/tags/4.0.0.zip
     # via
     #   -r requirements.txt
     #   djangocms-frontend
-easy-thumbnails==2.7.2
+easy-thumbnails==2.8.0
     # via
     #   -r requirements.txt
     #   django-filer
 html5lib==1.1
     # via -r requirements.txt
+lxml==4.8.0
+    # via svglib
 pillow==8.4.0
     # via
     #   -r requirements.txt
     #   easy-thumbnails
+    #   reportlab
 pytz==2021.3
     # via
     #   -r requirements.txt
     #   django
+reportlab==3.6.7
+    # via
+    #   easy-thumbnails
+    #   svglib
 six==1.16.0
     # via
     #   -r requirements.txt
@@ -95,6 +114,12 @@ sqlparse==0.4.2
     # via
     #   -r requirements.txt
     #   django
+svglib==1.2.1
+    # via easy-thumbnails
+tinycss2==1.1.1
+    # via
+    #   cssselect2
+    #   svglib
 unidecode==1.1.2
     # via
     #   -r requirements.txt
@@ -102,4 +127,6 @@ unidecode==1.1.2
 webencodings==0.5.1
     # via
     #   -r requirements.txt
+    #   cssselect2
     #   html5lib
+    #   tinycss2
