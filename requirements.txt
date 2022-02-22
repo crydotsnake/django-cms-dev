@@ -9,12 +9,15 @@ asgiref==3.2.10
     #   -r requirements.txt
     #   django
 cssselect2==0.4.1
-    # via svglib
+    # via
+    #   -r requirements.txt
+    #   svglib
 django==3.1.14
     # via
     #   -r requirements.txt
     #   django-appconf
     #   django-classy-tags
+    #   django-debug-toolbar
     #   django-entangled
     #   django-filer
     #   django-formtools
@@ -36,8 +39,13 @@ django-cms @ https://github.com/django-cms/django-cms/archive/refs/tags/3.9.0.zi
     # via
     #   -r requirements.txt
     #   djangocms-attributes-field
+    #   djangocms-bootstrap4
     #   djangocms-frontend
     #   djangocms-icon
+    #   djangocms-link
+    #   djangocms-picture
+django-debug-toolbar==3.2.4
+    # via -r requirements.txt
 django-entangled==0.4
     # via
     #   -r requirements.txt
@@ -45,7 +53,10 @@ django-entangled==0.4
 django-filer==2.1.2
     # via
     #   -r requirements.txt
+    #   djangocms-bootstrap4
     #   djangocms-frontend
+    #   djangocms-link
+    #   djangocms-picture
 django-formtools==2.3
     # via -r requirements.txt
 django-js-asset==1.2.2
@@ -68,31 +79,49 @@ django-select2==7.10.0
     #   djangocms-frontend
 django-treebeard==4.5.1
     # via -r requirements.txt
-djangocms-admin-style==2.0.2
+djangocms-admin-style==3.0.0
     # via -r requirements.txt
 djangocms-attributes-field==2.0.0
     # via
     #   -r requirements.txt
+    #   djangocms-bootstrap4
     #   djangocms-frontend
     #   djangocms-icon
+    #   djangocms-link
+    #   djangocms-picture
+djangocms-bootstrap4==2.0.0
+    # via -r requirements.txt
 djangocms-frontend @ https://github.com/fsbraun/djangocms-frontend/archive/master.zip
     # via -r requirements.txt
 djangocms-icon==2.0.0
     # via
     #   -r requirements.txt
+    #   djangocms-bootstrap4
     #   djangocms-frontend
+djangocms-link==3.0.0
+    # via
+    #   -r requirements.txt
+    #   djangocms-bootstrap4
+djangocms-picture==3.0.0
+    # via
+    #   -r requirements.txt
+    #   djangocms-bootstrap4
 djangocms-text-ckeditor @ https://github.com/django-cms/djangocms-text-ckeditor/archive/refs/tags/4.0.0.zip
     # via
     #   -r requirements.txt
+    #   djangocms-bootstrap4
     #   djangocms-frontend
 easy-thumbnails==2.8.0
     # via
     #   -r requirements.txt
     #   django-filer
+    #   djangocms-picture
 html5lib==1.1
     # via -r requirements.txt
 lxml==4.8.0
-    # via svglib
+    # via
+    #   -r requirements.txt
+    #   svglib
 pillow==8.4.0
     # via
     #   -r requirements.txt
@@ -104,6 +133,7 @@ pytz==2021.3
     #   django
 reportlab==3.6.7
     # via
+    #   -r requirements.txt
     #   easy-thumbnails
     #   svglib
 six==1.16.0
@@ -114,10 +144,14 @@ sqlparse==0.4.2
     # via
     #   -r requirements.txt
     #   django
+    #   django-debug-toolbar
 svglib==1.2.1
-    # via easy-thumbnails
+    # via
+    #   -r requirements.txt
+    #   easy-thumbnails
 tinycss2==1.1.1
     # via
+    #   -r requirements.txt
     #   cssselect2
     #   svglib
 unidecode==1.1.2
@@ -130,3 +164,4 @@ webencodings==0.5.1
     #   cssselect2
     #   html5lib
     #   tinycss2
+django-jsonfield-backport==1.0.4

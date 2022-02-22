@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'v#5n#6&*$8*^z46w!=(ovh_r2nll801uh8netd7j(0b9-_@c)x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
@@ -57,6 +57,7 @@ INSTALLED_APPS = [
 'djangocms_text_ckeditor',
 
 # djangocms-bootstrap4
+'djangocms_icon',
 'djangocms_link',
 'djangocms_picture',
 'djangocms_bootstrap4',
@@ -76,7 +77,6 @@ INSTALLED_APPS = [
 'djangocms_bootstrap4.contrib.bootstrap4_utilities',
 
 # djangocms-frontend
-'djangocms_icon',
 'djangocms_frontend',
 'djangocms_frontend.contrib.accordion',
 'djangocms_frontend.contrib.alert',
@@ -96,6 +96,8 @@ INSTALLED_APPS = [
 
 # Django Debug Toolbar
 'debug_toolbar',
+
+'django_jsonfield_backport',
 ]
 
 THUMBNAIL_HIGH_RESOLUTION = True
