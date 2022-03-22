@@ -35,7 +35,7 @@ django-classy-tags==3.0.1
     # via
     #   -r requirements.txt
     #   django-sekizai
-django-cms @ https://github.com/django-cms/django-cms/archive/refs/tags/3.9.0.zip
+-e git+https://github.com/crydotsnake/django-cms.git#egg=django-cms
     # via
     #   -r requirements.txt
     #   djangocms-attributes-field
