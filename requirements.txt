@@ -4,7 +4,16 @@
 #
 #    pip-compile requirements.txt
 #
-asgiref==3.2.10
+-e git+https://github.com/crydotsnake/django-cms.git@develop#egg=django-cms
+    # via
+    #   -r requirements.txt
+    #   djangocms-attributes-field
+    #   djangocms-bootstrap4
+    #   djangocms-frontend
+    #   djangocms-icon
+    #   djangocms-link
+    #   djangocms-picture
+asgiref==3.5.0
     # via
     #   -r requirements.txt
     #   django
@@ -12,7 +21,7 @@ cssselect2==0.4.1
     # via
     #   -r requirements.txt
     #   svglib
-django==3.1.14
+django==3.2.12
     # via
     #   -r requirements.txt
     #   django-appconf
@@ -21,6 +30,7 @@ django==3.1.14
     #   django-entangled
     #   django-filer
     #   django-formtools
+    #   django-jsonfield-backport
     #   django-polymorphic
     #   django-sekizai
     #   django-select2
@@ -35,15 +45,6 @@ django-classy-tags==3.0.1
     # via
     #   -r requirements.txt
     #   django-sekizai
--e git+https://github.com/crydotsnake/django-cms.git#egg=django-cms
-    # via
-    #   -r requirements.txt
-    #   djangocms-attributes-field
-    #   djangocms-bootstrap4
-    #   djangocms-frontend
-    #   djangocms-icon
-    #   djangocms-link
-    #   djangocms-picture
 django-debug-toolbar==3.2.4
     # via -r requirements.txt
 django-entangled==0.4
@@ -63,6 +64,8 @@ django-js-asset==1.2.2
     # via
     #   -r requirements.txt
     #   django-mptt
+django-jsonfield-backport==1.0.4
+    # via -r requirements.txt
 django-mptt==0.13.4
     # via
     #   -r requirements.txt
@@ -79,7 +82,7 @@ django-select2==7.10.0
     #   djangocms-frontend
 django-treebeard==4.5.1
     # via -r requirements.txt
-djangocms-admin-style==3.0.0
+djangocms-admin-style==3.1.0
     # via -r requirements.txt
 djangocms-attributes-field==2.0.0
     # via
@@ -164,4 +167,3 @@ webencodings==0.5.1
     #   cssselect2
     #   html5lib
     #   tinycss2
-django-jsonfield-backport==1.0.4
