@@ -4,15 +4,6 @@
 #
 #    pip-compile requirements.txt
 #
--e git+https://github.com/crydotsnake/django-cms.git@develop#egg=django-cms
-    # via
-    #   -r requirements.txt
-    #   djangocms-attributes-field
-    #   djangocms-bootstrap4
-    #   djangocms-frontend
-    #   djangocms-icon
-    #   djangocms-link
-    #   djangocms-picture
 asgiref==3.5.0
     # via
     #   -r requirements.txt
@@ -26,6 +17,7 @@ django==3.2.12
     #   -r requirements.txt
     #   django-appconf
     #   django-classy-tags
+    #   django-cms
     #   django-debug-toolbar
     #   django-entangled
     #   django-filer
@@ -44,7 +36,18 @@ django-appconf==1.0.5
 django-classy-tags==3.0.1
     # via
     #   -r requirements.txt
+    #   django-cms
     #   django-sekizai
+django-cms==3.10.0
+    # via
+    #   -r requirements.txt
+    #   djangocms-attributes-field
+    #   djangocms-bootstrap4
+    #   djangocms-frontend
+    #   djangocms-icon
+    #   djangocms-link
+    #   djangocms-picture
+    #   djangocms-snippet
 django-debug-toolbar==3.2.4
     # via -r requirements.txt
 django-entangled==0.4
@@ -59,7 +62,9 @@ django-filer==2.1.2
     #   djangocms-link
     #   djangocms-picture
 django-formtools==2.3
-    # via -r requirements.txt
+    # via
+    #   -r requirements.txt
+    #   django-cms
 django-js-asset==1.2.2
     # via
     #   -r requirements.txt
@@ -75,15 +80,21 @@ django-polymorphic==3.0.0
     #   -r requirements.txt
     #   django-filer
 django-sekizai==2.0.0
-    # via -r requirements.txt
+    # via
+    #   -r requirements.txt
+    #   django-cms
 django-select2==7.10.0
     # via
     #   -r requirements.txt
     #   djangocms-frontend
 django-treebeard==4.5.1
-    # via -r requirements.txt
+    # via
+    #   -r requirements.txt
+    #   django-cms
 djangocms-admin-style==3.1.0
-    # via -r requirements.txt
+    # via
+    #   -r requirements.txt
+    #   django-cms
 djangocms-attributes-field==2.0.0
     # via
     #   -r requirements.txt
@@ -109,6 +120,8 @@ djangocms-picture==3.0.0
     # via
     #   -r requirements.txt
     #   djangocms-bootstrap4
+djangocms-snippet==3.0.0
+    # via -r requirements.txt
 djangocms-text-ckeditor @ https://github.com/django-cms/djangocms-text-ckeditor/archive/refs/tags/4.0.0.zip
     # via
     #   -r requirements.txt

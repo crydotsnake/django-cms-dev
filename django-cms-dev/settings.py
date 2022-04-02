@@ -98,6 +98,8 @@ INSTALLED_APPS = [
 'debug_toolbar',
 
 'django_jsonfield_backport',
+
+'djangocms_snippet',
 ]
 
 THUMBNAIL_HIGH_RESOLUTION = True
