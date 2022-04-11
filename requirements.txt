@@ -180,3 +180,4 @@ webencodings==0.5.1
     #   cssselect2
     #   html5lib
     #   tinycss2
+djangocms-education==1.4.0

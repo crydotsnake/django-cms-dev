@@ -16,7 +16,6 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
@@ -35,101 +34,101 @@ LANGUAGES = [
     ('de', 'German'),
 ]
 
-
 # Application definition
 
 INSTALLED_APPS = [
-'djangocms_admin_style',
-'django.contrib.admin',
-'django.contrib.auth',
-'django.contrib.contenttypes',
-'django.contrib.sessions',
-'django.contrib.messages',
-'django.contrib.staticfiles',
-'django.contrib.sites',
-'cms',
-'menus',
-'treebeard',
-'sekizai',
-'filer',
-'easy_thumbnails',
-'mptt',
-'djangocms_text_ckeditor',
+    'djangocms_admin_style',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'cms',
+    'menus',
+    'treebeard',
+    'sekizai',
+    'filer',
+    'easy_thumbnails',
+    'mptt',
+    'djangocms_text_ckeditor',
 
-# djangocms-bootstrap4
-'djangocms_icon',
-'djangocms_link',
-'djangocms_picture',
-'djangocms_bootstrap4',
-'djangocms_bootstrap4.contrib.bootstrap4_alerts',
-'djangocms_bootstrap4.contrib.bootstrap4_badge',
-'djangocms_bootstrap4.contrib.bootstrap4_card',
-'djangocms_bootstrap4.contrib.bootstrap4_carousel',
-'djangocms_bootstrap4.contrib.bootstrap4_collapse',
-'djangocms_bootstrap4.contrib.bootstrap4_content',
-'djangocms_bootstrap4.contrib.bootstrap4_grid',
-'djangocms_bootstrap4.contrib.bootstrap4_jumbotron',
-'djangocms_bootstrap4.contrib.bootstrap4_link',
-'djangocms_bootstrap4.contrib.bootstrap4_listgroup',
-'djangocms_bootstrap4.contrib.bootstrap4_media',
-'djangocms_bootstrap4.contrib.bootstrap4_picture',
-'djangocms_bootstrap4.contrib.bootstrap4_tabs',
-'djangocms_bootstrap4.contrib.bootstrap4_utilities',
+    # djangocms-bootstrap4
+    'djangocms_icon',
+    'djangocms_link',
+    'djangocms_picture',
+    'djangocms_bootstrap4',
+    'djangocms_bootstrap4.contrib.bootstrap4_alerts',
+    'djangocms_bootstrap4.contrib.bootstrap4_badge',
+    'djangocms_bootstrap4.contrib.bootstrap4_card',
+    'djangocms_bootstrap4.contrib.bootstrap4_carousel',
+    'djangocms_bootstrap4.contrib.bootstrap4_collapse',
+    'djangocms_bootstrap4.contrib.bootstrap4_content',
+    'djangocms_bootstrap4.contrib.bootstrap4_grid',
+    'djangocms_bootstrap4.contrib.bootstrap4_jumbotron',
+    'djangocms_bootstrap4.contrib.bootstrap4_link',
+    'djangocms_bootstrap4.contrib.bootstrap4_listgroup',
+    'djangocms_bootstrap4.contrib.bootstrap4_media',
+    'djangocms_bootstrap4.contrib.bootstrap4_picture',
+    'djangocms_bootstrap4.contrib.bootstrap4_tabs',
+    'djangocms_bootstrap4.contrib.bootstrap4_utilities',
 
-# djangocms-frontend
-'djangocms_frontend',
-'djangocms_frontend.contrib.accordion',
-'djangocms_frontend.contrib.alert',
-'djangocms_frontend.contrib.badge',
-'djangocms_frontend.contrib.card',
-'djangocms_frontend.contrib.carousel',
-'djangocms_frontend.contrib.collapse',
-'djangocms_frontend.contrib.content',
-'djangocms_frontend.contrib.grid',
-'djangocms_frontend.contrib.image',
-'djangocms_frontend.contrib.jumbotron',
-'djangocms_frontend.contrib.link',
-'djangocms_frontend.contrib.listgroup',
-'djangocms_frontend.contrib.media',
-'djangocms_frontend.contrib.tabs',
-'djangocms_frontend.contrib.utilities',
+    # djangocms-frontend
+    'djangocms_frontend',
+    'djangocms_frontend.contrib.accordion',
+    'djangocms_frontend.contrib.alert',
+    'djangocms_frontend.contrib.badge',
+    'djangocms_frontend.contrib.card',
+    'djangocms_frontend.contrib.carousel',
+    'djangocms_frontend.contrib.collapse',
+    'djangocms_frontend.contrib.content',
+    'djangocms_frontend.contrib.grid',
+    'djangocms_frontend.contrib.image',
+    'djangocms_frontend.contrib.jumbotron',
+    'djangocms_frontend.contrib.link',
+    'djangocms_frontend.contrib.listgroup',
+    'djangocms_frontend.contrib.media',
+    'djangocms_frontend.contrib.tabs',
+    'djangocms_frontend.contrib.utilities',
 
-# Django Debug Toolbar
-'debug_toolbar',
+    # Django Debug Toolbar
+    'debug_toolbar',
 
-'django_jsonfield_backport',
+    'django_jsonfield_backport',
 
-'djangocms_snippet',
+    'djangocms_snippet',
+
+    'djangocms_education',
 ]
 
 THUMBNAIL_HIGH_RESOLUTION = True
 
 THUMBNAIL_PROCESSORS = (
-'easy_thumbnails.processors.colorspace',
-'easy_thumbnails.processors.autocrop',
-'filer.thumbnail_processors.scale_and_crop_with_subject_location',
-'easy_thumbnails.processors.filters'
+    'easy_thumbnails.processors.colorspace',
+    'easy_thumbnails.processors.autocrop',
+    'filer.thumbnail_processors.scale_and_crop_with_subject_location',
+    'easy_thumbnails.processors.filters'
 )
 
 MIDDLEWARE = [
-'django.middleware.security.SecurityMiddleware',
-'django.contrib.sessions.middleware.SessionMiddleware',
-'django.middleware.common.CommonMiddleware',
-'django.middleware.csrf.CsrfViewMiddleware',
-'django.contrib.auth.middleware.AuthenticationMiddleware',
-'django.contrib.messages.middleware.MessageMiddleware',
-'django.middleware.clickjacking.XFrameOptionsMiddleware',
-'cms.middleware.user.CurrentUserMiddleware',
-'cms.middleware.page.CurrentPageMiddleware',
-'cms.middleware.toolbar.ToolbarMiddleware',
-'cms.middleware.language.LanguageCookieMiddleware',
-'django.middleware.locale.LocaleMiddleware',
-'cms.middleware.utils.ApphookReloadMiddleware',
-'debug_toolbar.middleware.DebugToolbarMiddleware',
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'cms.middleware.user.CurrentUserMiddleware',
+    'cms.middleware.page.CurrentPageMiddleware',
+    'cms.middleware.toolbar.ToolbarMiddleware',
+    'cms.middleware.language.LanguageCookieMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
+    'cms.middleware.utils.ApphookReloadMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'django-cms-dev.urls'
-
 
 TEMPLATES = [
     {
@@ -153,14 +152,11 @@ TEMPLATES = [
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
-
 CMS_TEMPLATES = [
     ('home.html', 'Home page template'),
 ]
 
-
 WSGI_APPLICATION = 'django-cms-dev.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -168,10 +164,9 @@ WSGI_APPLICATION = 'django-cms-dev.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR , 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -191,7 +186,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
@@ -204,7 +198,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
