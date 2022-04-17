@@ -92,7 +92,7 @@ django-treebeard==4.5.1
     # via
     #   -r requirements.txt
     #   django-cms
-djangocms-admin-style==3.1.0
+djangocms-admin-style==3.1.1
     # via
     #   -r requirements.txt
     #   django-cms
@@ -106,7 +106,7 @@ djangocms-attributes-field==2.0.0
     #   djangocms-picture
 djangocms-bootstrap4==2.0.0
     # via -r requirements.txt
-djangocms-education==1.4.0
+djangocms-education==1.6.0
     # via -r requirements.txt
 djangocms-frontend @ https://github.com/fsbraun/djangocms-frontend/archive/master.zip
     # via -r requirements.txt
