@@ -38,7 +38,7 @@ django-classy-tags==3.0.1
     #   -r requirements.txt
     #   django-cms
     #   django-sekizai
-django-cms==3.10.0
+django-cms==3.11.0
     # via
     #   -r requirements.txt
     #   djangocms-attributes-field
@@ -92,7 +92,7 @@ django-treebeard==4.5.1
     # via
     #   -r requirements.txt
     #   django-cms
-djangocms-admin-style==3.1.1
+djangocms-admin-style==3.2.1
     # via
     #   -r requirements.txt
     #   django-cms
@@ -108,7 +108,7 @@ djangocms-bootstrap4==2.0.0
     # via -r requirements.txt
 djangocms-education==1.6.0
     # via -r requirements.txt
-djangocms-frontend @ https://github.com/fsbraun/djangocms-frontend/archive/master.zip
+djangocms-frontend==1.0.1
     # via -r requirements.txt
 djangocms-icon==2.0.0
     # via
@@ -125,7 +125,7 @@ djangocms-picture==3.0.0
     #   djangocms-bootstrap4
 djangocms-snippet==3.0.0
     # via -r requirements.txt
-djangocms-text-ckeditor @ https://github.com/django-cms/djangocms-text-ckeditor/archive/refs/tags/4.0.0.zip
+djangocms-text-ckeditor==5.1.1
     # via
     #   -r requirements.txt
     #   djangocms-bootstrap4
